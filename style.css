@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'header_font';
+    src: url('fonts/fonts/seasrn__-webfont.woff2') format('woff2'),
+         url('seasrn__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('fonts/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --header_width: 30vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.side-bar {
+    position: fixed;
+    width: var(--header_width);
+    overflow: hidden;
+}
+
+.side-bar > img {
+    position: relative;
+    left: -200px;
+    height: 100vh;
+}
+
+.side-bar-header {
+    position: absolute;
+    top: 25vh;
+
+    width: var(--header_width);
+
+    background-color: rgb(0 0 0 / 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar-header img {
+    width: 10vw;
+}
+
+.side-bar-header p {
+    font-family: "header_font", sans-serif;
+    font-size: 3em;
+}
