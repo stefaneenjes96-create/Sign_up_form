@@ -86,6 +86,8 @@ body {
 
     font-family: "open_sans";
     font-size: 1.5rem;
+
+    background-color: #FFFDF1;
 }
 
 .main-header {
@@ -94,7 +96,6 @@ body {
     text-align: left;
     flex-wrap: wrap;
 
-    background-color: #FFFDF1;
     border-bottom: 1px solid #562F0020;
 }
 
@@ -102,12 +103,24 @@ body {
     margin-bottom: 2rem;
 }
 
-.main-form {
-    margin-top: 2rem;
+.form-section {
+    background-color: white;
+}
+
+.form-section .warning {
+    font-size: 0.8rem;
+}
+
+.form-section > p {
+    padding-left: 2rem;
+
+    font-size: 2rem;
 }
 
 .main-form > p {
     padding-left: 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 .main-form form {
@@ -137,4 +150,25 @@ form .inputs {
     gap: 5rem;
     box-shadow: 2px 2px 2px rgb(140, 140, 140);
     padding-bottom: 2rem;
+}
+
+form button {
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 1rem;
+    font-family: "open_sans";
+
+    background-color: #FF9644;
+
+    border: 2px solid #562F00;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 3px #562F00;
+}
+
+form button:hover {
+    box-shadow: 2px 2px 3px #562F00;
 }
