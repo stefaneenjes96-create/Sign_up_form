@@ -30,6 +30,7 @@
 body {
     display: flex;
     font-size: 16px;
+    height: 100vh;
 }
 
 .side-bar {
@@ -91,7 +92,7 @@ body {
 }
 
 .main-header {
-    padding: 10vh 10vw 5vh 3vw;
+    padding: 10vh 10vw 5vh 2rem;
     font-size: 1.5rem;
     text-align: left;
     flex-wrap: wrap;
@@ -137,11 +138,15 @@ form p {
 form input {
     height: 1.5rem;
 
-    border: 1px solid #562F00;
+    border: 1px solid #bfbfbf;
     border-radius: 5px;
 
     font-size: 1.2rem;
     font-family: "open_sans";
+}
+
+form input:focus {
+    outline: 2px solid blue;
 }
 
 form .inputs {

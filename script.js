@@ -5,9 +5,9 @@ const confirmedPassword = document.querySelector("#confirm_password")
 
 console.log(create_button)
 
-create_button.addEventListener("click", () => {
+confirmedPassword.addEventListener("change", () => {
     console.log(password)
-    if (password.value !== confirmedPassword.value) {
+    if (password.value !== confirmedPassword.value | confirmedPassword.value.length < 8) {
         console.log("passwords do not match");
         password.style.borderColor = "red";
         confirmedPassword.style.borderColor = "red";
